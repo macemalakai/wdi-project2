@@ -29,7 +29,7 @@
 
 
 
-![Schema](http://i.imgur.com/tmikhJ7.png)
+![Schema](http://i.imgur.com/qSyAGBr.png)
 
 
 ![Wire-Frame](http://i.imgur.com/lq3WREY.jpg)
