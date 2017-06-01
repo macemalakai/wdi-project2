@@ -5,17 +5,7 @@ CREATE TABLE slams (
   slam_name VARCHAR(64) NOT NULL,
   slam_location VARCHAR(128)  NOT NULL,
   slam_image_url VARCHAR(255) NOT NULL,
-  surface_type VARCHAR(20) NOT NULL,
-);
-
-
-DROP TABLE IF EXISTS  topics;
-
-CREATE TABLE topics (
-  id BIGSERIAL PRIMARY KEY,
-  topic VARCHAR(100),
-  topic_description VARCHAR(255),
-  topic_id INTEGER references slams(id),
+  surface_type VARCHAR(20) NOT NULL
 );
 
 
@@ -25,7 +15,7 @@ CREATE TABLE questions (
   id BIGSERIAL PRIMARY KEY,
   title VARCHAR(100),
   description VARCHAR(255),
-  question_id INTEGER references topic(id),
+  grand_slam_id INTEGER references slams(id)
 );
 
 
@@ -33,6 +23,6 @@ DROP TABLE IF EXISTS  responses;
 
 CREATE TABLE responses (
   id BIGSERIAL PRIMARY KEY,
-  response VARCHAR(100),
-  response_id INTEGER references questions(id),
+  response VARCHAR(255),
+  question_id INTEGER references questions(id)
 );
