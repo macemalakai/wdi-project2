@@ -6,42 +6,24 @@
 
 const db = require('../config/database');
 
-
 module.exports = {
 
   allSlams() {
     return db.any(`
         SELECT *
         FROM slams
-        ORDER by id
+        ORDER BY id
         ASC
       `);
    },
 
-   oneSlam() {
-     
-   }
-
-  // findById(id) {
-  //   returndb.one(`
-  //     SELECT *
-  //     FROM slams
-  //     WHERE id =
-  //     `, id)
-  // },
-
-
-
-
-
-
-
-
-
-
-
-
-
+   findById(id) {
+     return db.one(`
+        SELECT *
+        FROM slams
+        WHERE id = $1
+        `, id);
+   },
 
 
 

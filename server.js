@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express     = require('express');
 // Start up express.
 const app         =  express();
@@ -10,7 +11,6 @@ const slamsRouter = require('./resources/slams')
 
 // Who is setting our port?
 const PORT = process.argv[2] || process.env.PORT || 3000;
-
 
 app.set('view engine', 'ejs');
 
