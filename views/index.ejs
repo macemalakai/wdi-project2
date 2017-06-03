@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <title>Tennis Forum</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
       <div>
         <ul>
           <% slams.forEach((slam) => { %>
-              // This is updating the url parameters.
+               <!--This is updating the url parameters.-->
             <h3><a href="/slams/<%= slam.id %>"><%= slam.slam_name %></a></h3>
           <% }); %>
         </ul>

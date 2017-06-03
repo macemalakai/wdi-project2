@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <title>Tennis Forum</title>
   </head>
   <body>
@@ -13,7 +14,23 @@
             </h3>
         </ul>
       </div>
-      <img src=<%= slams.slam_image_url %> />
+      <img class="circle responsive-img"src=<%= slams.slam_image_url %> />
     </div>
+
+    <div class="row">
+   <form class="col s6">
+     <div class="row">
+       <div class="input-field col s3">
+         <input placeholder="Placeholder" id="question" type="text" class="">
+         <label for="question">Questions></label>
+       </div>
+       <div class="input-field col s3">
+         <input id="answer" type="text" class="">
+         <label for="answer">Have an answer?</label>
+       </div>
+     </div>
+   </form>
+ </div>
+
   </body>
 </html>
