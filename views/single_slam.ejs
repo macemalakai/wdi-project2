@@ -3,33 +3,38 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+
     <title>Tennis Forum</title>
   </head>
   <body>
-    <div class="row">
-      <div>
-        <ul>
-            <h3>
-              <%= slams.slam_name %>
-            </h3>
-        </ul>
-      </div>
-      <img class="circle responsive-img"src=<%= slams.slam_image_url %> />
-    </div>
 
-    <div class="row">
-   <form class="col s6">
-     <div class="row">
-       <div class="input-field col s3">
-         <input placeholder="Placeholder" id="question" type="text" class="">
-         <label for="question">Questions></label>
+    <div class="container">
+      <div class="row">
+        <div class= "col m3">
+              <h3>
+                <%= slams.slam_name %>
+              </h3>
+        </div>
+        <div>
+          <img class="circle logo-image" src=<%= slams.slam_image_url %> />
+        </div>
+      </div>
+
+      <div class="row">
+        <form class="col s6">
+          <div class="row">
+            <div class="input-field col s3">
+              <input id="question" placeholder="Pose a question:" type="text" class="">
+           <label for="question"></label>
+         </div>
+         <div class="input-field col s3">
+           <input id="answer" placeholder="Have an answer?" type="text" class="">
+           <label for="answer"></label>
+         </div>
        </div>
-       <div class="input-field col s3">
-         <input id="answer" type="text" class="">
-         <label for="answer">Have an answer?</label>
-       </div>
-     </div>
-   </form>
+     </form>
+   </div>
  </div>
 
   </body>

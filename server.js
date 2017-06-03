@@ -16,10 +16,21 @@ app.set('view engine', 'ejs');
 
 app.use('/slams', slamsRouter);
 
+
+//define variable to link jquery and materializeCSS
+const dir = {
+  public: path.join(__dirname, 'public'),
+  jquery: path.join(__dirname, 'node_modules/jquery/dist'),
+};
+
+//link jquerys/materializeCSS
+app.use(express.static(dir.public));
+app.use('/vendor/jquery', express.static(dir.jquery));
+
+
 app.get('/' , (req, res) => {
   res.redirect(301, '/slams');
 });
-
 
 
 
