@@ -16,7 +16,7 @@ const views      = require('./viewsController');
 
   router.get('/:id', controller.show);
 
-  router.get('')
+  // router.get('/:id', contoller.create);
 
 
 

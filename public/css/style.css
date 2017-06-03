@@ -1,8 +1,21 @@
+body {
+  background-color: white;
+  color: rgba(0, 151, 151, .9);
+}
+
+img {
+  box-shadow: 3px 3px rgba(0, 51, 51, .25);
+}
+
+.container {
+  margin-top: 100px;
+}
 
 .logo-image {
   height: 500px;
   width: 500px;
 }
 
-body {
+.row {
+  text-align: center;
 }

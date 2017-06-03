@@ -34,8 +34,8 @@
     },
 
     // create(req,res) {
-    //   Slam.newQuestion()
-    //   .then((slam_question) => {
+    //   Slam.newInput()
+    //   .then((input_ifno) => {
     //     res.render('')
     //   });
     // },

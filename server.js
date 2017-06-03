@@ -28,7 +28,7 @@ app.use(express.static(dir.public));
 app.use('/vendor/jquery', express.static(dir.jquery));
 
 
-app.get('/' , (req, res) => {
+app.get('/', (req, res) => {
   res.redirect(301, '/slams');
 });
 
