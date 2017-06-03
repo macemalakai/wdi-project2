@@ -9,7 +9,7 @@ CREATE TABLE slams (
 );
 
 
-DROP TABLE IF EXISTS  questions;
+DROP TABLE questions CASCADE;
 
 CREATE TABLE questions (
   id BIGSERIAL PRIMARY KEY,

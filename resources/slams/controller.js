@@ -9,7 +9,6 @@
       // This will call the function located in the model directory.
       Slam.allSlams()
         .then((slams_data) => {
-          console.log(slams_data);
           // .render automatically looks for a views folder
           res.render('index', {
             // This created a new key 'slams', within the larger object retrieved, with 'slams_data' equaling something we can access with dot notation.
@@ -33,6 +32,13 @@
           res.send(err);
         });
     },
+
+    // create(req,res) {
+    //   Slam.newQuestion()
+    //   .then((slam_question) => {
+    //     res.render('')
+    //   });
+    // },
 
 
     //Another function here.
