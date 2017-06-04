@@ -9,18 +9,20 @@
   </head>
   <body>
 
+  
+
     <div class="container">
-      <div class="row">
+      <div class="row push-s3">
         <div class= "col m3">
               <h3>
                 <%= slams.slam_name %>
-              </h4>
-              <h3>
-                <%= questions.title %>
-              </h4>
+              </h3>
+
+
+
         </div>
         <div>
-          <img class="circle logo-image" src=<%= slams.slam_image_url %> />
+          <img class="circle logo-image" src="<%= slams.slam_image_url %>"/>
         </div>
       </div>
 
@@ -28,11 +30,11 @@
         <form class="col s6">
           <div class="row">
             <div class="input-field col s3">
-              <input id="question" placeholder="Pose a question:" type="text" class="">
+              <input id="question" placeholder="Post a question:" type="text" class="">
            <label for="question"></label>
          </div>
          <div class="input-field col s3">
-           <input id="answer" placeholder="Different answer?" type="text" class="">
+           <input name= "req.body.[response]" id="response" placeholder="Different answer?" type="text" class="">
            <label for="answer"></label>
          </div>
        </div>

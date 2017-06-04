@@ -32,6 +32,8 @@ app.get('/', (req, res) => {
   res.redirect(301, '/slams');
 });
 
+app.post('/:id')
+
 
 
 app.listen(PORT, () => console.log(`Server up and listening on port ${PORT}`));

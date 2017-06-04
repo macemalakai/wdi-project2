@@ -23,7 +23,6 @@ module.exports = {
         FROM slams
         WHERE id = $1
         `, id);
-
    },
 
 

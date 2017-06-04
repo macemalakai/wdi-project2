@@ -1,6 +1,8 @@
 
   // This is the new variable that now represents the entire model folder, which contains all of my query selectors that interact with the database.
   const Slam = require('../../models/grand_slam');
+  const Question = require('../../models/grand_slam');
+  const Response = require('../../models/grand_slam');
 
   // This file will hold all ROUTES. Use from specific to generic.
 
@@ -23,22 +25,17 @@
     show(req, res) {
       // This will grab the url paramater passed in.
       Slam.findById(req.params.id)
-        .then((id) => {
-          res.render('single_slam', {
-            slams: id,
+        .then((slams_data) => {
+          res.render('single_slam_page', {
+            slams: slams_data,
           });
+          console.log(slams_data);
         })
         .catch((err) => {
           res.send(err);
         });
-    },
 
-    // create(req,res) {
-    //   Slam.newInput()
-    //   .then((input_ifno) => {
-    //     res.render('')
-    //   });
-    // },
+    },
 
 
     //Another function here.

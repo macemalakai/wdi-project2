@@ -6,17 +6,94 @@
     <title>Tennis Forum</title>
   </head>
   <body>
-    <h2>Grand Slams</h2>
-    <div class="row">
 
-      <div>
-        <ul>
-          <% slams.forEach((slam) => { %>
-               <!--This is updating the url parameters.-->
-            <h3><a href="/slams/<%= slam.id %>"><%= slam.slam_name %></a></h3>
-          <% }); %>
-        </ul>
+
+      <h2 class="title">Grand Slams</h2>
+      <nav>
+        <div class="nav-wrapper background-color: teal ">
+
+            <% slams.forEach((slam) => { %>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="/slams/<%= slam.id %>"><%= slam.slam_name %></a></li>
+              </ul>
+            <% }); %>
+        </div>
+      </nav>
+
+      <div class="container">
+
+      <%# First Card%>
+      <div class="row">
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://i.imgur.com/7fKqsxx.jpg">
+              <span class="card-title">Australian Open</span>
+            </div>
+            <div class="card-content">
+              <p>The 2017 Australian Open was a tennis tournament that took place at Melbourne Park between 16–29 January 2017.[1] It was the 105th edition of the Australian Open, and the first Grand Slam tournament of the year. The tournament consisted of events for professional players in singles, doubles and mixed doubles play. Junior and wheelchair players competed in singles and doubles tournaments. As in previous years, the tournament's title sponsor was Kia.</p>
+            </div>
+            <div class="card-action">
+              <a href="/slams/1">Interested?</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://i.imgur.com/cPJfa2E.jpg">
+              <span class="card-title">French Open</span>
+            </div>
+            <div class="card-content">
+              <p>It is the 116th edition of the French Open and the second Grand Slam event of the year. It takes place at the Stade Roland Garros from 28 May to 11 June and consist of events for players in singles, doubles and mixed doubles play. Junior and wheelchair players also take part in singles and doubles events.</p>
+            </div>
+            <div class="card-action">
+              <a href="/slams/2">Interested?</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://i.imgur.com/cXWjYOt.jpg">
+              <span class="card-title">Wimbledon</span>
+            </div>
+            <div class="card-content">
+              <p>The Championships, Wimbledon, commonly known simply as Wimbledon, is the oldest tennis tournament in the world, and is widely considered the most prestigious. It has been held at the All England Club in Wimbledon, London, since 1877 and is played on outdoor grass courts.</p>
+            </div>
+            <div class="card-action">
+              <a href="/slams/3">Interested?</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://i.imgur.com/LnJviFQ.jpg">
+              <span class="card-title">U.S. Open</span>
+            </div>
+            <div class="card-content">
+              <p>The United States Open Tennis Championships is a hardcourt tennis tournament. The tournament is the modern version of one of the oldest tennis championships in the world, the U.S. National Championship, for which men's singles was first contested in 1881. Since 1987, the US Open has been chronologically the fourth and final tennis major comprising the Grand Slam each year; the other three, in chronological order, are the Australian Open, the French Open and Wimbledon.</p>
+            </div>
+            <div class="card-action">
+              <a href="/slams/4">Interested?</a>
+            </div>
+          </div>
+        </div>
+
       </div>
+      <%# End of First Card%>
+
+
+      <%# End of container%>
     </div>
+
+
+
+
+
   </body>
 </html>
