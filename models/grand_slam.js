@@ -25,6 +25,14 @@ module.exports = {
         `, id);
    },
 
+   get questions() {
+     return db.one(`
+       SELECT *
+       FROM questions
+       WHERE id = $1
+       `, id);
+   }
+
 
 
 
