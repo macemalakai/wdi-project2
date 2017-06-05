@@ -1,6 +1,6 @@
 body {
-  background-color: white;
-  color: rgba(0, 151, 151, .9);
+  background-color: #455a64 !important;
+  color: #455a64;
   text-align: center;
 }
 
@@ -9,18 +9,35 @@ img {
 }
 
 .title {
-  color: grey;
+  color: white;
   text-align: center;
 }
 
+h3 {
+  color: white;
+}
+
+/*https://stackoverflow.com/questions/38964113/how-can-i-create-a-navbar-with-center-aligned-links-using-materialize*/
+nav ul{
+  transform: translateX(20%);
+  webkit-transform: translateX(20%);
+}
+
+li {
+  color: white;
+}
+
+ul {
+  margin: auto;
+}
 
 .col {
   padding:30px;
   box-sizing:border-box;
 }
-a {
+/*a {
   margin-left: 100px;
-}
+}*/
 
 h2 {
   text-align: center;
@@ -28,8 +45,8 @@ h2 {
 
 
 .nav-wrapper{
-  margin-bottom: 100px;
- background-color: teal !important;
+  margin-bottom: 25px;
+  background-color: teal !important;
 }
 
 nav {

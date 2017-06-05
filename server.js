@@ -9,6 +9,8 @@ const bodyParser  = require ('body-parser');
 const slamsRouter = require('./resources/slams')
 // const forumRouter = require('./resources/hotels');
 
+const urlencodedParser = bodyParser.urlencoded({ extended: true });
+
 // Who is setting our port?
 const PORT = process.argv[2] || process.env.PORT || 3000;
 
@@ -32,7 +34,10 @@ app.get('/', (req, res) => {
   res.redirect(301, '/slams');
 });
 
-app.post('/:id')
+app.post('/:id', urlencodedParser, function (req, res) {
+  console.log(req.body);
+  res.render('new_question');
+})
 
 
 

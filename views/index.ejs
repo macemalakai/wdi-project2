@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css"/>
     <title>Tennis Forum</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
         <div class="nav-wrapper background-color: teal ">
 
             <% slams.forEach((slam) => { %>
-              <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <ul id="nav-mobile" class=" hide-on-med-and-down">
                 <li><a href="/slams/<%= slam.id %>"><%= slam.slam_name %></a></li>
               </ul>
             <% }); %>
@@ -31,7 +32,7 @@
               <span class="card-title">Australian Open</span>
             </div>
             <div class="card-content">
-              <p>The 2017 Australian Open was a tennis tournament that took place at Melbourne Park between 16–29 January 2017.[1] It was the 105th edition of the Australian Open, and the first Grand Slam tournament of the year. The tournament consisted of events for professional players in singles, doubles and mixed doubles play. Junior and wheelchair players competed in singles and doubles tournaments. As in previous years, the tournament's title sponsor was Kia.</p>
+              <p>The 2017 Australian Open was a tennis tournament that took place at Melbourne Park between 16–29 January 2017. It was the 105th edition of the Australian Open, and the first Grand Slam tournament of the year. The tournament consisted of events for professional players in singles, doubles and mixed doubles play. Junior and wheelchair players competed in singles and doubles tournaments. As in previous years, the tournament's title sponsor was Kia.</p>
             </div>
             <div class="card-action">
               <a href="/slams/1">Interested?</a>
