@@ -39,18 +39,39 @@
 
     // show(req, res) {
     //   // This will grab the url paramater passed in.
-    //   Question.findById(req.params.id)
+    //   Slam.findById(req.params.id)
     //     .then((slams_data) => {
-    //       res.render('new_question', {
-    //         questions: question_data,
-    //       });
-    //       console.log(question_data);
+    //       Slam.getQuestions(req.params.id)
+    //         .then((slam_questions) => {
+    //           res.render('single_slam_page', {
+    //             slams: slams_data,
+    //             questions: slam_questions
+    //           });
+    //         })
+    //         .catch((err) => {
+    //           res.send(err);
+    //         });
     //     })
     //     .catch((err) => {
     //       res.send(err);
     //     });
     //
-    // },
+    // }
+
+      // show(req, res) {
+      //   // This will grab the url paramater passed in.
+      //   Question.findById(req.params.id)
+      //     .then((slams_data) => {
+      //       res.render('new_question', {
+      //         questions: question_data,
+      //       });
+      //       console.log(question_data);
+      //     })
+      //     .catch((err) => {
+      //       res.send(err);
+      //     });
+      //
+      // },
 
 
 

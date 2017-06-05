@@ -6,7 +6,7 @@ const app         =  express();
 const logger      = require('morgan');
 const path        = require('path');
 const bodyParser  = require ('body-parser');
-const slamsRouter = require('./resources/slams')
+const slamsRouter = require('./resources/slams');
 // const forumRouter = require('./resources/hotels');
 
 const urlencodedParser = bodyParser.urlencoded({ extended: true });

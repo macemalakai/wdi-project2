@@ -22,15 +22,15 @@ module.exports = {
         SELECT *
         FROM slams
         WHERE id = $1
-        `, id);
+        `, [id]);
    },
 
-   get questions() {
+   getQuestions(id) {
      return db.one(`
        SELECT *
        FROM questions
        WHERE id = $1
-       `, id);
+       `, [id]);
    }
 
 
